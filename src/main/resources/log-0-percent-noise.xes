@@ -1,0 +1,2959 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- This file has been generated with the OpenXES library. It conforms -->
+<!-- to the XML serialization of the XES standard for log storage and -->
+<!-- management. -->
+<!-- XES standard version: 1.0 -->
+<!-- OpenXES library version: 1.0RC7 -->
+<!-- OpenXES is available from http://www.openxes.org/ -->
+<log xes.version="1.0" xes.features="nested-attributes" openxes.version="1.0RC7">
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext"/>
+	<extension name="Lifecycle" prefix="lifecycle" uri="http://www.xes-standard.org/lifecycle.xesext"/>
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext"/>
+	<global scope="trace">
+		<string key="concept:name" value="DEFAULT"/>
+	</global>
+	<global scope="event">
+		<string key="lifecycle:transition" value="DEFAULT"/>
+		<date key="time:timestamp" value="1970-01-01T01:00:00.000+01:00"/>
+		<string key="concept:name" value="DEFAULT"/>
+	</global>
+	<classifier name="concept:name" keys="concept:name"/>
+	<string key="concept:name" value="DHM - Synthetic - 0% Noise"/>
+	<trace>
+		<string key="concept:name" value="1"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1970-01-01T01:00:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-01T01:17:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-01T01:40:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-01T01:40:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-01T01:44:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-01T01:50:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="T"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-01T02:05:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-01T02:19:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-01T02:19:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="orange"/>
+			<date key="time:timestamp" value="1970-01-01T14:40:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Alice"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-01T14:51:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-01T14:59:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-01T14:59:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-01T15:14:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-01T15:28:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="S"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-01T15:39:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-01T15:42:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-01T15:48:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="100"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1970-01-07T01:57:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Sue"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-07T02:14:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-07T02:24:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-07T02:24:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-07T02:31:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-07T02:48:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="out"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-07T03:06:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-07T03:24:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Organize Ambulance"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-01-07T03:37:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="1000"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1970-03-04T10:01:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Alice"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T10:28:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T10:48:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T10:48:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T10:59:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T11:00:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="F"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T11:07:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T11:21:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10000"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-18T18:47:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Sue"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T18:52:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T19:21:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T19:21:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T19:47:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T19:50:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="G"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T19:55:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T20:07:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T20:07:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T20:23:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="100000"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1987-02-13T17:35:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1987-02-13T17:43:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1987-02-13T17:56:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1987-02-13T17:56:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1987-02-13T18:22:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1987-02-13T18:24:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="M"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1987-02-13T18:27:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1987-02-13T18:52:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10001"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-18T20:41:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Sue"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T21:06:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T21:34:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T21:34:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T21:40:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="normal"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T21:46:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T21:54:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T22:00:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10002"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-18T21:56:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Alice"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T22:15:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T22:42:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T22:42:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T22:49:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T22:55:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="N"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T22:56:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T23:10:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T23:20:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10003"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-18T23:43:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Sue"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-18T23:46:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T00:07:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T00:07:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T00:24:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T00:35:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="F"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T00:44:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T00:50:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10004"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-19T01:39:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Alice"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T01:52:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T02:07:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T02:07:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T02:26:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T02:29:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T02:50:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="Q"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T02:54:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T03:12:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T03:19:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10005"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-19T03:34:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Sue"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T03:39:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T03:46:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T03:46:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T04:01:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T04:06:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T04:18:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="U"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T04:24:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T04:32:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10006"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-19T04:38:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Sue"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T04:56:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T05:12:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T05:12:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T05:23:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T05:41:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="I"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T05:57:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T06:14:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10007"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="red"/>
+			<date key="time:timestamp" value="1971-09-19T06:37:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T07:06:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T07:31:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T07:31:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T07:48:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T07:50:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T08:10:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="U"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T08:20:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T08:29:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10008"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="orange"/>
+			<date key="time:timestamp" value="1971-09-19T08:10:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Sue"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T08:18:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T08:39:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T08:39:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T08:55:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T09:02:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="normal"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T09:32:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T09:39:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10009"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-19T09:57:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="John"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T10:11:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T10:41:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T10:41:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T10:46:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T10:48:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T11:04:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="I"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T11:09:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T11:29:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="1001"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="orange"/>
+			<date key="time:timestamp" value="1970-03-04T11:48:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Sue"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T12:12:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T12:38:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T12:38:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T12:44:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="P"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T13:02:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T13:05:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T13:22:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10010"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-19T11:40:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="John"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T11:46:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T11:52:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T11:52:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T11:57:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T12:21:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="P"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T12:45:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T12:55:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10011"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="orange"/>
+			<date key="time:timestamp" value="1971-09-19T13:34:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="John"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T13:46:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T13:58:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T13:58:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T14:15:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T14:24:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T14:42:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T14:53:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T14:56:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T15:07:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10012"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-19T15:04:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T15:32:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T15:43:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T15:43:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T15:54:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T15:55:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="M"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T16:19:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T16:28:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10013"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="orange"/>
+			<date key="time:timestamp" value="1971-09-19T16:27:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Sue"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T16:36:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T16:51:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T16:51:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T16:58:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T17:09:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T17:16:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T17:19:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="H"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T17:39:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T18:05:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10014"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="orange"/>
+			<date key="time:timestamp" value="1971-09-19T17:57:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T18:02:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T18:28:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T18:28:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T18:52:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T18:58:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="H"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T19:26:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T19:46:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10015"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-19T19:55:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Alice"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T20:17:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T20:40:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T20:40:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T20:47:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T20:47:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="K"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T21:16:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T21:26:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10016"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-19T21:14:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Sue"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T21:38:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T22:02:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T22:02:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T22:14:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T22:24:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="W"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T22:29:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T22:37:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10017"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-19T22:31:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T22:47:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T23:04:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T23:04:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T23:17:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T23:17:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="out"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T23:34:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T23:38:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-19T23:40:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Organize Ambulance"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T00:08:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10018"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-19T23:47:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T00:08:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T00:36:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T00:36:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T00:48:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="I"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T01:01:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T01:02:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T01:06:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T01:09:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T01:33:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10019"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-20T01:06:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="John"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T01:31:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T01:53:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T01:53:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T02:05:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T02:20:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T02:25:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="L"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T02:32:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T02:45:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T02:59:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="1002"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1970-03-04T13:21:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="John"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T13:47:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T13:54:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T13:54:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T13:58:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T14:05:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T14:21:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T14:41:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10020"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-20T02:22:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="John"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T02:46:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T03:04:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T03:04:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T03:10:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T03:29:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="M"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T03:46:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T03:56:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10021"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="red"/>
+			<date key="time:timestamp" value="1971-09-20T04:15:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="John"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T04:35:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T05:02:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T05:02:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T05:13:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T05:22:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T05:42:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T05:45:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="E"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T05:51:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T05:57:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10022"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-20T05:26:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="John"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T05:56:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T06:20:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T06:20:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T06:26:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T06:34:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="Q"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T06:42:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T06:42:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T06:51:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10023"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-20T06:55:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Sue"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T07:04:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T07:33:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T07:33:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T07:49:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T07:55:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="I"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T08:13:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T08:16:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T08:36:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10024"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-20T08:25:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Alice"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T08:39:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T08:51:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T08:51:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T09:13:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T09:21:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="W"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T09:36:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T09:49:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T09:57:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10025"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-20T09:57:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T10:03:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T10:23:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T10:23:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T10:31:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T10:38:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T10:39:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T10:46:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="out"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T10:51:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T10:56:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Organize Ambulance"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T11:10:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10026"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="orange"/>
+			<date key="time:timestamp" value="1971-09-20T11:28:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="John"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T11:39:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T11:49:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T11:49:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T11:57:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T12:17:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="I"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T12:38:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T12:46:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10027"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-20T12:50:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T12:56:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T12:59:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T12:59:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T13:15:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T13:26:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T13:43:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="W"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T13:44:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T13:55:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10028"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-20T14:00:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T14:13:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T14:22:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T14:22:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T14:29:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="F"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T14:43:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T14:47:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T14:53:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T14:56:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T15:01:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10029"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="orange"/>
+			<date key="time:timestamp" value="1971-09-20T15:26:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="John"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T15:33:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T15:44:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T15:44:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T16:02:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="normal"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T16:08:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T16:11:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T16:37:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="1003"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1970-03-04T15:01:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Sue"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T15:24:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T15:37:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T15:37:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T15:42:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="Q"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T15:50:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T15:54:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T16:00:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T16:02:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T16:16:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10030"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-20T16:35:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T16:39:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T16:42:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T16:42:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T16:46:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T16:56:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="F"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T17:14:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T17:19:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10031"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-20T18:16:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Sue"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T18:43:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T18:57:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T18:57:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T19:11:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T19:12:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="L"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T19:17:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T19:27:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T19:36:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10032"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="orange"/>
+			<date key="time:timestamp" value="1971-09-20T20:15:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="John"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T20:39:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T20:44:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T20:44:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T20:47:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T21:08:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="G"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T21:14:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T21:23:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T21:36:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T21:55:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10033"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-20T21:27:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="John"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T21:31:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T21:47:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T21:47:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T21:52:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="M"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T22:09:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T22:14:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T22:37:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T22:38:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T23:03:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10034"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-20T23:11:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="John"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T23:16:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T23:26:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T23:26:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T23:37:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T23:43:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="P"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-20T23:56:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T00:02:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10035"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="red"/>
+			<date key="time:timestamp" value="1971-09-21T00:32:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T00:47:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T01:06:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T01:06:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T01:09:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="O"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T01:13:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T01:14:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T01:22:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T01:30:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10036"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-21T01:45:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T02:09:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T02:14:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T02:14:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T02:19:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="I"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T02:24:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T02:37:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T02:38:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T02:41:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10037"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-21T03:38:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T03:52:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T03:57:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T03:57:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T04:01:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="T"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T04:06:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T04:17:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T04:32:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T04:33:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T04:46:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10038"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-21T05:07:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Sue"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T05:26:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T05:38:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T05:38:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T05:51:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T05:51:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T06:16:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="F"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T06:17:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T06:22:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10039"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="orange"/>
+			<date key="time:timestamp" value="1971-09-21T06:24:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Alice"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T06:30:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T06:46:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T06:46:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T06:54:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T07:05:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T07:12:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="U"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T07:22:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T07:50:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="1004"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="orange"/>
+			<date key="time:timestamp" value="1970-03-04T16:57:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="John"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T17:19:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T17:32:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T17:32:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T17:35:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T17:55:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="normal"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T18:03:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1970-03-04T18:21:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10040"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="orange"/>
+			<date key="time:timestamp" value="1971-09-21T07:58:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T08:23:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T08:41:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T08:41:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T08:48:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="H"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T08:57:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T09:04:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T09:08:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T09:25:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T09:28:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10041"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="orange"/>
+			<date key="time:timestamp" value="1971-09-21T09:20:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T09:44:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T09:50:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T09:50:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T09:58:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T10:05:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T10:10:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="K"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T10:24:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T10:33:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T10:45:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10042"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="orange"/>
+			<date key="time:timestamp" value="1971-09-21T10:32:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="John"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T10:59:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T11:11:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T11:11:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T11:19:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T11:23:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="L"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T11:31:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T11:40:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T11:45:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T12:07:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10043"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-21T11:37:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T11:55:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T12:23:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T12:23:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T12:26:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T12:30:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="W"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T12:40:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T12:49:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T12:52:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T13:03:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10044"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="orange"/>
+			<date key="time:timestamp" value="1971-09-21T12:44:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Alice"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T13:11:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T13:28:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T13:28:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T13:39:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T13:42:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T13:49:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="W"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T13:59:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T14:27:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10045"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-21T13:46:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Alice"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T14:13:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T14:41:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T14:41:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T14:53:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T14:55:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T14:58:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="G"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T15:13:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T15:23:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T15:34:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10046"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="white"/>
+			<date key="time:timestamp" value="1971-09-21T15:16:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T15:36:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10047"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="orange"/>
+			<date key="time:timestamp" value="1971-09-21T16:19:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="John"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T16:38:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T16:48:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T16:48:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T16:52:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T17:06:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T17:08:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="out"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T17:22:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T17:44:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Organize Ambulance"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T17:48:00.000+01:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10048"/>
+		<event>
+			<string key="concept:name" value="Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="priority" value="green"/>
+			<date key="time:timestamp" value="1971-09-21T17:52:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="nurse" value="Joe"/>
+			<string key="concept:name" value="Register"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T18:10:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T18:16:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="X-Ray"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T18:16:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T18:28:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Visit"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T18:34:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T18:51:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Final Visit"/>
+			<string key="type" value="L"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T19:00:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Prepare"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T19:06:00.000+01:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Check"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="1971-09-21T19:16:00.000+01:00"/>
+		</event>
+	</trace>
+</log>
