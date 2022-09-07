@@ -1,7 +1,5 @@
 package api;
 
-import com.basic.CodeEnum;
-
 import java.io.Serializable;
 
 /**
@@ -10,61 +8,55 @@ import java.io.Serializable;
 public class Result<T> implements Serializable {
 
     //状态码
-    private Integer status;
+    private Integer code;
     //状态
-    private String message;
+    private String msg;
     //返回封装数据
     private T data;
-
-    public void __init__(){
-
-    }
 
 
     public Result() {
     }
 
-    public Result(Integer status) {
-        this.status = status;
+    public Result(Integer code) {
+        this.code = code;
     }
 
-    public Result(Integer status, String message) {
-        this.status = status;
-        this.message = message;
+    public Result(Integer code, String msg) {
+        this.code = code;
+        this.msg = msg;
     }
 
-    public Result(Integer status, String message, T data) {
-        this.status = status;
-        this.message = message;
+    public Result(Integer code, String msg, T data) {
+        this.code = code;
+        this.msg = msg;
         this.data = data;
     }
 
-    //不返回数据构造方法
     public Result(CodeEnum codeEnum) {
-        this.status = codeEnum.getCode();
-        this.message = codeEnum.getMessage();
+        this.code = codeEnum.getCode();
+        this.msg = codeEnum.getMsg();
     }
 
-    //返回数据构造方法
     public Result(CodeEnum codeEnum, T data) {
         this(codeEnum);
         this.data = data;
     }
 
-    public Integer getStatus() {
-        return status;
+    public Integer getCode() {
+        return code;
     }
 
-    public void setStatus(Integer status) {
-        this.status = status;
+    public void setCode(Integer code) {
+        this.code = code;
     }
 
-    public String getMessage() {
-        return message;
+    public String getMsg() {
+        return msg;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 
     public T getData() {
@@ -77,29 +69,29 @@ public class Result<T> implements Serializable {
 
 
     //请求成功（不返回数据）
-    public static <T> Result <T> success(){
-        return new Result <T>(CodeEnum.SUCCESS);
+    public static <T> Result<T> ok() {
+        return new Result<T>(CodeEnum.SUCCESS);
     }
 
     //请求成功（返回数据）
-    public static <T> Result <T> success(T data){
-        return new Result <T>(CodeEnum.SUCCESS,data);
+    public static <T> Result<T> ok(T data) {
+        return new Result<T>(CodeEnum.SUCCESS, data);
     }
 
     //参数格式不正确
-    public static <T> Result <T> badRequest(){
-        return new Result <T>(CodeEnum.BAD_REQUEST);
+    public static <T> Result<T> error() {
+        return new Result<T>(CodeEnum.BAD_REQUEST);
     }
 
-/*
+
     @Override
     public String toString() {
         return "Result{" +
-                "status=" + status +
-                ", message='" + message + '\'' +
+                "code=" + code +
+                ", msg='" + msg + '\'' +
                 ", data=" + data +
                 '}';
     }
-    */
+
 }
 

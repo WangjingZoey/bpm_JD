@@ -1,0 +1,43 @@
+{
+  "name": "基于日志分析的服务适配优化",
+  "version": "0.0.1",
+  "dataset": [],
+  "training_parameter": [],
+  "predict_parameter": [],
+  "api": [
+    {
+      "name": "predict",
+      "method": [
+        "POST"
+      ],
+      "description": "根据bpm日志中挖掘出的服务关系，给出云边协同的服务适配优化部署方案",
+      "parameters": {},
+      "doc": {
+        "input_params": [
+          {
+            "param_name": "",
+            "type": "",
+            "description": ""
+          }
+        ],
+        "output_result": [
+          {
+            "name": "code",
+            "type": "Integer",
+            "description": "回执码，0成功，1失败"
+          },
+          {
+            "name": "msg",
+            "type": "String",
+            "description": "回执信息"
+          },
+          {
+            "name": "data",
+            "type": "Map",
+            "description": "返回算法结果，在bpm服务模型基础上使用NSGA算法与FCFS算法进行求解，返回两种算法的方案部署结果与NSGA算法的性能提高比例"
+          }
+        ]
+      }
+    }
+  ]
+}
