@@ -9,7 +9,7 @@ import java.util.Random;
 
 public class NewNSGA {
 
-
+	
 	private ArrayList<ArrayList<ServiceDef>> wgins;
 	private ArrayList<ArrayList<ServiceDef>> wgins_2;
 	List<NodeDef> NodeList;
@@ -29,12 +29,12 @@ public class NewNSGA {
 	private ArrayList<ArrayList<ServiceDef>> oldPopulation;
 	private ArrayList<ArrayList<ServiceDef>> oldPopulation_copy;
 	private ArrayList<ArrayList<ServiceDef>> newPopulation;
-
+	
 	private ArrayList<ArrayList<Float>> floatList;
 	private List<Float> obj1;
 	private List<Float> obj2;
 	private List<Integer> sortList;
-
+	
 
 	public NewNSGA(ArrayList<ArrayList<ServiceDef>> wgins, ArrayList<ArrayList<ServiceDef>> wgins_2, List<NodeDef> NodeList, int scale, float pc, float pm, int mAX_GEN) {   //write by smy
 		super();
@@ -46,7 +46,7 @@ public class NewNSGA {
 		this.Pm = pm;
 		this.MAX_GEN = mAX_GEN;
 	}
-
+	
 	public void init() {
 		t = 0;
 		//bestT = 0;
@@ -57,7 +57,7 @@ public class NewNSGA {
 		oldPopulation = new ArrayList<ArrayList<ServiceDef>>();
 		obj1 = new ArrayList<Float>();
 		obj2 = new ArrayList<Float>();
-
+	
 		copyListArrayList(wgins, oldPopulation);
 		oldPopulation.addAll(wgins_2);             //oldPopulation��Ⱥ��ǰscale�ǵ�һ�����壬��scale-2scale�ǵڶ�������
 		//copyListArrayList(wgins_2, newPopulation);
@@ -69,28 +69,28 @@ public class NewNSGA {
 
 
 //		initGroup();
-
+		
 
 		for (int k = 0; k < 2 * scale; k ++) {
 			//fitness.add(k, getFitness(oldPopulation.get(k)));
 			obj1.add(k, MultiObjective.getObj1(oldPopulation.get(k)));
-			obj2.add(k, MultiObjective.getObj2(oldPopulation.get(k)));
+			obj2.add(k, MultiObjective.getObj2(oldPopulation.get(k)));		
 		}
-
+		
 		Sorting();
 		//select();
-
+		
 
 		//countRate();
 	}
-
+	
 	public void Sorting() {
 		int sortNum = 0;
 		int num = 0;
 		sortList = new ArrayList<Integer>();
 		for(int m = 0; m < oldPopulation.size(); m ++)
 			sortList.add(0);
-
+		
 		oldPopulation_copy = new ArrayList<ArrayList<ServiceDef>>();
 		copyListArrayList(oldPopulation, oldPopulation_copy);
 
@@ -123,18 +123,18 @@ public class NewNSGA {
 		System.out.println("selectBest");
 		int sortNum = 0;
 		int num = 0;
-
+		
 		ArrayList<ArrayList<ServiceDef>> newPopulation_copy = new ArrayList<ArrayList<ServiceDef>>();
 		copyListArrayList(newPopulation, newPopulation_copy);
-
+		
 		while (newPopulation_copy.size() != 0){
-
+		
 			for(int i = 0; i < newPopulation_copy.size(); i++){
 				for(int j = 0; j < newPopulation_copy.size(); j++){
 					if(!((obj1.get(i) > MultiObjective.getObj1(newPopulation_copy.get(j))) && (obj2.get(i) > MultiObjective.getObj2(newPopulation_copy.get(j)))) ) {
 						for(int k = 0; k < newPopulation.size(); k++){
 							if(newPopulation_copy.get(i) == newPopulation.get(k))
-							{num = k;}
+								{num = k;}
 						}
 						sortList.set(num, sortNum);
 						newPopulation_copy.remove(newPopulation_copy.get(i));
@@ -142,34 +142,34 @@ public class NewNSGA {
 				}
 				sortNum ++;
 			}
-
+			
 		}
-
+		
 		List<ArrayList<ServiceDef>> result = new ArrayList<ArrayList<ServiceDef>>();
 		for(int k = 0; k < scale; k ++) {
 			if(sortList.get(k) == 0) {
 				result.add(newPopulation.get(k));
 			}
 		}
-
+		
 //		for(int m = 0; m < result.size(); m ++){
 //			System.out.println("result printf");
 //			System.out.println(result.get(m));
 //		}
-
+		
 		Random random = new Random(System.currentTimeMillis());
 		int randNum = random.nextInt(result.size());
-		bestTour = result.get(randNum);
+		bestTour = result.get(randNum);			
 	}
-
+	
 	public void select() {
 		int sortNum = 0;
-
+		
 		for(int i = 0; i < sortList.size(); i ++){
 			System.out.print(sortList.get(i));
 		}
 		System.out.println();
-
+		
 		while (newPopulation.size() < scale){
 			//System.out.println("1111");
 			for (int i = 0; i < oldPopulation.size(); i ++){
@@ -185,14 +185,14 @@ public class NewNSGA {
 		if(newPopulation.size() > scale){
 			for(int j = newPopulation.size()-1; j > scale; j --) {
 				newPopulation.remove(j);
-			}
+			}				
 		}
 //		System.out.println("printf newPopulation");
 //		for(int i = 0; i < newPopulation.size(); i ++){
 //			System.out.println(newPopulation.get(i));
 //		}
 	}
-
+	
 
 	public void evolution() {
 		int k;
@@ -217,7 +217,7 @@ public class NewNSGA {
 
 	public void OXCross(int k1, int k2) {
 		Random random = new Random(System.currentTimeMillis());
-
+		
 		int minLength = newPopulation.get(k1).size() < newPopulation.get(k2).size() ? newPopulation.get(k1).size()
 				: newPopulation.get(k2).size();
 		minLength--;
@@ -241,20 +241,20 @@ public class NewNSGA {
 
 	public void solve() {
 		int i,k;
-
+		
 		ArrayList<ArrayList<ServiceDef>> oldPopulation_copy2 = new ArrayList<ArrayList<ServiceDef>>();
 		copyListArrayList(oldPopulation, oldPopulation_copy2);
-
+		
 
 		for (t = 0; t < MAX_GEN; t++) {
 			evolution();
-
+			
 			oldPopulation.clear();
 			oldPopulation.addAll(newPopulation);
 			for(int m = scale; m < 2 * scale; m ++){
 				oldPopulation.add(m, oldPopulation.get(m));
 			}
-
+			
 			for (k = 0; k < 2 * scale; k++) {
 				obj1.set(k, MultiObjective.getObj1(oldPopulation.get(k)));
 				obj2.set(k, MultiObjective.getObj2(oldPopulation.get(k)));
@@ -265,13 +265,13 @@ public class NewNSGA {
 //		System.out.println("�����Ⱥ...");
 
 
-
+		
 		selectBest();
 //		System.out.println("���·����");
 		for (i = 0; i < bestTour.size(); i++) {
 			System.out.print(bestTour.get(i).getNodeid());
 		}
-
+			
 	}
 
 	public void copyFloatList(List<Float> from, List<Float> to) {
@@ -305,7 +305,7 @@ public class NewNSGA {
 			}
 		}
 	}
-
+	
 	//write by smy
 /*
 	public float getObj1(ArrayList<ServiceDef> candidateSIlist) {
@@ -346,7 +346,7 @@ public class NewNSGA {
 				+ w3 * (-1.0) * ( 1.0 * phi * loc + 1.0 * delta * tem);
 		return fitness;
 	}
-*/
+*/	
 	public ArrayList<ServiceDef> getPgd() {
 		return bestTour;
 	}
