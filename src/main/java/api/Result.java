@@ -10,7 +10,7 @@ public class Result<T> implements Serializable {
     //状态码
     private Integer code;
     //状态
-    private String msg;
+    private String message;
     //返回封装数据
     private T data;
 
@@ -22,20 +22,20 @@ public class Result<T> implements Serializable {
         this.code = code;
     }
 
-    public Result(Integer code, String msg) {
+    public Result(Integer code, String message) {
         this.code = code;
-        this.msg = msg;
+        this.message = message;
     }
 
-    public Result(Integer code, String msg, T data) {
+    public Result(Integer code, String message, T data) {
         this.code = code;
-        this.msg = msg;
+        this.message = message;
         this.data = data;
     }
 
     public Result(CodeEnum codeEnum) {
         this.code = codeEnum.getCode();
-        this.msg = codeEnum.getMsg();
+        this.message = codeEnum.getmessage();
     }
 
     public Result(CodeEnum codeEnum, T data) {
@@ -51,12 +51,12 @@ public class Result<T> implements Serializable {
         this.code = code;
     }
 
-    public String getMsg() {
-        return msg;
+    public String getMessage() {
+        return message;
     }
 
-    public void setMsg(String msg) {
-        this.msg = msg;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     public T getData() {
@@ -88,7 +88,7 @@ public class Result<T> implements Serializable {
     public String toString() {
         return "Result{" +
                 "code=" + code +
-                ", msg='" + msg + '\'' +
+                ", message='" + message + '\'' +
                 ", data=" + data +
                 '}';
     }
